@@ -5,6 +5,6 @@ const itemsArray = [...items];
 
 for (const item of itemsArray) {
   console.log("");
-  console.log("Category:", item.firstElementChild.textContent);
+  console.log("Category:", item.querySelector("h2").textContent);
   console.log("Elements:", item.querySelectorAll("li").length);
 }

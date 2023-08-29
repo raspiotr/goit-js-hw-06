@@ -27,6 +27,7 @@ gallery.style.listStyleType = "none";
 gallery.style.width = "1200px";
 gallery.style.display = "flex";
 gallery.style.justifyContent = "space-between";
+gallery.style.margin = "auto";
 
 const pictures = document.querySelectorAll("img");
 

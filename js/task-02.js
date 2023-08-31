@@ -29,5 +29,12 @@ list.prepend(...markupArray);
 // markupArray[0] = ingredients
 //   .map((item) => `<li class="item">${item}</li>`)
 //   .join("");
-
 // list.innerHTML = markupArray[0];
+
+// const markupArray = ingredients.map((item) => {
+//   const listElement = document.createElement("li");
+//   listElement.textContent = item;
+//   listElement.classList.add("item");
+//   return  listElement;
+// });
+// list.prepend(...markupArray);

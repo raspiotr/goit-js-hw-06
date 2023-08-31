@@ -7,14 +7,27 @@ const ingredients = [
   "Condiments",
 ];
 
+const list = document.querySelector("#ingredients");
 const markupArray = [];
 
-for (const item of ingredients) {
+// for (const item of ingredients) {
+//   let listElement = document.createElement("li");
+//   listElement.textContent = `${item}`;
+//   listElement.classList.add("item");
+//   markupArray.push(listElement);
+// }
+
+ingredients.forEach((item) => {
   let listElement = document.createElement("li");
   listElement.textContent = `${item}`;
   listElement.classList.add("item");
   markupArray.push(listElement);
-}
+});
 
-const list = document.querySelector("#ingredients");
 list.prepend(...markupArray);
+
+// markupArray[0] = ingredients
+//   .map((item) => `<li class="item">${item}</li>`)
+//   .join("");
+
+// list.innerHTML = markupArray[0];
